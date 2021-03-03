@@ -73,3 +73,20 @@ button.sound-active {
   text-align: center;}
 
 }
+
+
+
+/*version tablette*/
+
+
+@media screen and (max-width: 800px) {
+
+  .btn-container {
+  width: 33%;
+  text-align: center;}
+
+
+  button {
+  height: 150px;
+  width: 150px;
+}
