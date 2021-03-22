@@ -8,15 +8,14 @@ export function brief() {
     if(!monAudio) return;
     monAudio.previousElementSibling.classList.add("sound-active");
 
-           // console.log(monAudio);
-           monAudio.currentTime = 0;
-           monAudio.play();
-           monAudio.addEventListener('ended', function(action) {
-               monAudio.previousElementSibling.classList.remove("sound-active");
-           })
+    // console.log(monAudio);
+    monAudio.currentTime = 0;
+    monAudio.play();
+    monAudio.addEventListener('ended', function(action) {
+      monAudio.previousElementSibling.classList.remove("sound-active");
+      })
   
-        })
-
+  })
 } 
 
 export function mouseclick() {
@@ -29,11 +28,11 @@ export function mouseclick() {
     if (!monAudio) return;
     monAudio.previousElementSibling.classList.add("sound-active");
 
-         // console.log(monAudio);
-         monAudio.currentTime = 0;
-         monAudio.play();
-         monAudio.addEventListener('ended', function(action) {
-            monAudio.previousElementSibling.classList.remove("sound-active");
+    // console.log(monAudio);
+    monAudio.currentTime = 0;
+    monAudio.play();
+    monAudio.addEventListener('ended', function(action) {
+      monAudio.previousElementSibling.classList.remove("sound-active");
       })
 
   })

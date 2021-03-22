@@ -38,7 +38,7 @@ main {
 }
 
 .btn-container {
-  width: 33%;
+  width: 30%;
   text-align: center;
 }
 
@@ -60,7 +60,41 @@ button.sound-active {
   box-shadow: none;
 }
 
+.hide-mobile {
+display:none;
+}
+  
+.hide-tablet {
+display: none;
+}
+  
+.show-desktop {
+display:block;
+}
 
+/*version tablette*/
+
+
+@media screen and (max-width: 800px) {
+
+  .hide-desktop {
+  display: none;
+  }
+
+  .hide-mobile {
+  display: none;
+  }
+    
+  .show-tablet {
+  display: block;
+  }
+
+  button {
+  height: 90px;
+  width: 90px;
+  }
+
+}
 
 
 /*version mobile*/
@@ -68,25 +102,23 @@ button.sound-active {
 
 @media screen and (max-width: 570px) {
 
-  .btn-container {
-  width: 50%;
-  text-align: center;}
+  .hide-desktop {
+  display: none;
+  }
 
-}
-
-
-
-/*version tablette*/
-
-
-@media screen and (max-width: 800px) {
-
-  .btn-container {
-  width: 33%;
-  text-align: center;}
-
+  .hide-tablet {
+  display: none;
+  }
+    
+  .show-mobile {
+  display: block;
+  }
 
   button {
-  height: 150px;
-  width: 150px;
+  height: 70px;
+  width: 70px;
+  }
+
 }
+
+/*responsive mobile corrigé*/
